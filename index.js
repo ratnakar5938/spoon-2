@@ -1,11 +1,10 @@
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#menu');
+const btn = document.querySelector("#btn");
+const menu = document.querySelector("#menu");
 
-burger.addEventListener('click', () => {
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
+btn.addEventListener("click", () => {
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+    } else {
+        menu.classList.add("hidden");
     }
-    else {
-        menu.classList.add('hidden');
-    }
-})
+});
